@@ -1,5 +1,11 @@
+import CreateCharacterPage from "./pages/CreateCharacter";
+
 function App() {
-  return <h1>App</h1>;
+  return (
+    <>
+      <CreateCharacterPage />
+    </>
+  );
 }
 
 export default App;
