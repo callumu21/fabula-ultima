@@ -10,13 +10,43 @@ export type StatusEffect =
   | "ENRAGED"
   | "POISONED";
 
-export type BondEmotions =
+export type BondEmotion =
   | "ADMIRATION"
   | "INFERIORITY"
   | "LOYALTY"
   | "MISTRUST"
   | "AFFECTION"
   | "HATRED";
+
+export type Class =
+  | "ACE OF CARDS"
+  | "ARCANIST"
+  | "CHANTER"
+  | "CHIMERIST"
+  | "COMMANDER"
+  | "DANCER"
+  | "DARKBLADE"
+  | "ELEMENTALIST"
+  | "ENTROPIST"
+  | "ESPER"
+  | "FLORIST"
+  | "FURY"
+  | "GOURMET"
+  | "GUARDIAN"
+  | "INVOKER"
+  | "LOREMASTER"
+  | "MERCHANT"
+  | "MUTANT"
+  | "NECROMANCER"
+  | "ORATOR"
+  | "PILOT"
+  | "ROGUE"
+  | "SHARPSHOOTER"
+  | "SPIRITIST"
+  | "SYMBOLIST"
+  | "TINKERER"
+  | "WAYFARER"
+  | "WEAPONMASTER";
 
 export interface Character {
   name: string;
@@ -28,11 +58,11 @@ export interface Character {
   origin: string;
   race: string;
   fabulaPoints: number;
-  bonds: Record<string, BondEmotions[]>;
+  bonds: Record<string, BondEmotion[]>;
   inventoryPointsMax: number;
   currentInventoryPoints: number;
   zenit: number;
-  classes: string[];
+  classes: Class[];
   hpMax: number;
   currentHp: number;
   mpMax: number;
